@@ -21,6 +21,10 @@ Post.init(
               model: 'user',
               key: 'id'
           }
+      },
+      content: {
+        type: DataTypes.TEXT,
+        allowNull: true
       }
   },
   {

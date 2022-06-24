@@ -4,9 +4,13 @@
     Edit Post
   </h2>
   <form class="edit-post-form">
+    <h3>Title:</h3>
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.post_url}})</span>
+      <input name="edit-title" type="text" value="{{post.title}}" />    
+    </div>
+    <div>
+      <h3>Body:</h3>
+      <textarea id="edit-content">{{post.content}}</textarea>  
     </div>
     <div>
       You posted this on {{format_date post.created_at}}

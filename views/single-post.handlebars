@@ -1,12 +1,13 @@
 <article class="post">
-  <div class="title">
-    <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
-    <span>({{post.post_url}})</span>
-  </div>
   <div class="meta">
+    <h2>{{post.title}}</h2>
     Posted by {{post.user.username}} on {{format_date post.created_at}}
     |
     <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+  </div>
+  <div class="content">
+    {{!-- this doesn't exist yet! --}}
+    {{post.content}}
   </div>
 </article>
 {{> comments post.comments}}
