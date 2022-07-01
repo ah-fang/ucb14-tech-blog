@@ -22,7 +22,7 @@ Post.init(
               key: 'id'
           }
       },
-      content: {
+      post_text: {
         type: DataTypes.TEXT,
         allowNull: true
       }

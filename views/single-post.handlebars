@@ -1,41 +1,17 @@
 <article class="post">
   <div class="meta">
     <h2>{{post.title}}</h2>
+    <div class="content">
+      {{post.post_text}}
+    </div>
     Posted by {{post.user.username}} on {{format_date post.created_at}}
     |
     <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
   </div>
-  <div class="content">
-    {{!-- this doesn't exist yet! --}}
-    {{post.content}}
-  </div>
+
 </article>
+
 {{> comments post.comments}}
-
-{{#if loggedIn }}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">Comment</button>
-  </div>
-</form>
-{{/if}}
-
-<div class="comments">
-  {{#each post.comments}}
-  <section class="comment">
-    <div class="meta">
-      {{user.username}} on {{format_date created_at}}
-    </div>
-    <div class="text">
-      {{comment_text}}
-    </div>
-  </section>
-  {{/each}}
-</div>
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

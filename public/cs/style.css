@@ -14,9 +14,18 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--gray1);
+    color: var(--gray2);
+    background-color: #292929;
   }
-  
+
+  /* p {
+    text-overflow: ellipsis;
+  } */
+
+  main {
+    margin-bottom: 25px;
+  }
+
   a {
     text-decoration: none;
     color: var(--blue2);
@@ -94,6 +103,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    background-color: #ccc;
   }
   
   header h1 {
@@ -137,17 +147,19 @@
   
   .meta {
     color: var(--gray2);
-    background-color: var(--gray1)
   }
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+    border: 3px dashed var(--gray2);
+    padding: 5%;
   }
   
   .post .title span {
     font-style: italic;
     font-size: 90%;
     color: var(--gray2);
+
   }
   
   .edit-link {
@@ -155,6 +167,9 @@
     margin: -1.5% 0 2% 0;
   }
   
+  #comments-title {
+    color: var(--gray2);
+  }
   .comment-form {
     margin-bottom: 5%;
   }
@@ -162,20 +177,23 @@
   .comment {
     padding: 1%;
     margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    color: #000;
+    background-color: #ccc;
   }
   
   .comment .meta {
     font-size: 90%;
     margin-bottom: .5%;
     opacity: .6;
+    color:#292929;
   }
 
   #create-post {
     display: none;
+  }
+  
+  .new-post-form {
+    color:var(--gray2);
   }
   
   .new-post-form input {
@@ -187,9 +205,14 @@
   }
   
   footer {
+    background-color: var(--gray2);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    color: var(--gray1);
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: center;
     padding: 1%;
-    font-size: 110%;
+    font-size: 100%;
   }
