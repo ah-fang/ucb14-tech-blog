@@ -1,10 +1,11 @@
-var newPostBtn = document.getElementById('new-post')
+var newPostBtn = document.getElementById('new-post');
 
 function newPostSection() {
     var postSection = document.getElementById('create-post');
     postSection.setAttribute('style', 'display: block')
     newPostBtn.setAttribute('style', 'display: none');
 }
+
 async function newFormHandler(event) {
     event.preventDefault();
 

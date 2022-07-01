@@ -86,8 +86,8 @@ router.post('/', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-// withAuth,
-router.put('/:id',  (req, res) => {
+
+router.put('/:id', withAuth, (req, res) => {
     Post.update(
         {
             title: req.body.title,
