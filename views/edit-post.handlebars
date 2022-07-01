@@ -10,7 +10,7 @@
     </div>
     <div>
       <h3>Body:</h3>
-      <textarea id="edit-content">{{post.post_text}}</textarea>  
+      <input name="edit-text" type="text" value="{{post.post-text}}" />
     </div>
     <div>
       You posted this on {{format_date post.created_at}}
@@ -21,7 +21,7 @@
     <button type="button" class="delete-post-btn">Delete Post</button>
   </form>
 </article>
-{{>comments comments}}
+
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
 <script src="/javascript/comment.js"></script>

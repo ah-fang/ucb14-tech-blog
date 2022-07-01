@@ -8,8 +8,8 @@
     |
     <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
   </div>
-
 </article>
+<a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
 
 {{> comments post.comments}}
 

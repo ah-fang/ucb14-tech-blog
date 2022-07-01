@@ -13,6 +13,9 @@ module.exports = {
             /* if you're on the homepage, shorten posts past a certain character length with an ellipsis
             (add text-overflow: ellipsis property )
             */
+           post.post_text(
+            
+           )
         } else {
             //text-overflow
         }
