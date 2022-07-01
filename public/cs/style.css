@@ -17,10 +17,27 @@
     color: var(--gray2);
     background-color: #292929;
   }
+  .forms {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
 
-  /* p {
+  .login-form, .signup-form {
+    padding: .5%;
+  }
+  hover
+  .form-btn {
+    padding: 5%;
+  }
+  
+  .entry {
+    padding-bottom: 15px;
+  }
+  
+  p {
     text-overflow: ellipsis;
-  } */
+  }
 
   main {
     margin-bottom: 25px;
@@ -109,7 +126,10 @@
   header h1 {
     font-size: 1.5em;
   }
-  
+  header a:hover {
+    color: var(--gray1);
+  }
+
   main {
     flex: 1;
     padding: 2% 4%;

@@ -6,11 +6,11 @@
   <form class="edit-post-form">
     <h3>Title:</h3>
     <div>
-      <input name="edit-title" type="text" value="{{post.title}}" />    
+      <input name="post-title" type="text" value="{{post.title}}" />    
     </div>
+    <h3>Body:</h3>
     <div>
-      <h3>Body:</h3>
-      <input name="edit-text" type="text" value="{{post.post-text}}" />
+      <input name="post-text" type="text" value="{{post.post_text}}" />
     </div>
     <div>
       You posted this on {{format_date post.created_at}}

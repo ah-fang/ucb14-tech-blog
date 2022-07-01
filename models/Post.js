@@ -15,16 +15,16 @@ Post.init(
           type: DataTypes.STRING,
           allowNull: false
       },
+      post_text: {
+        type: DataTypes.TEXT,
+        allowNull: true
+      },
       user_id: {
           type: DataTypes.INTEGER,
           references: {
               model: 'user',
               key: 'id'
           }
-      },
-      post_text: {
-        type: DataTypes.TEXT,
-        allowNull: true
       }
   },
   {
