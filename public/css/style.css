@@ -46,7 +46,6 @@
   a {
     text-decoration: none;
     color: var(--blue2);
-    /* font-weight: bold; */
     transition: color .1s;
   }
   

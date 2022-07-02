@@ -38,7 +38,6 @@ router.get('/', withAuth, (req, res) => {
 });
 
 router.get('/edit/:id', withAuth, (req, res) => {
-    //get the post to edit
     Post.findOne({
         where: {
           id: req.params.id
@@ -69,7 +68,6 @@ router.get('/edit/:id', withAuth, (req, res) => {
             return;
           }
     
-          // serialize!
           const post = dbPostData.get({ plain: true });
     
           res.render('edit-post', { 

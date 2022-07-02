@@ -124,7 +124,6 @@ router.put('/:id', (req, res) => {
         });
 }); 
 
-// DELETE /api/users/1
 router.delete('/:id', (req, res) => {
     User.destroy({
         where: {

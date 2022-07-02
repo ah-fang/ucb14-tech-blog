@@ -7,17 +7,5 @@ module.exports = {
             return `${word}s`;
         }
         return word;
-    },
-    shorten_post_text: () => {
-        if(document.location === 'homepage') {
-            /* if you're on the homepage, shorten posts past a certain character length with an ellipsis
-            (add text-overflow: ellipsis property )
-            */
-           post.post_text(
-            
-           )
-        } else {
-            //text-overflow
-        }
     }
 }

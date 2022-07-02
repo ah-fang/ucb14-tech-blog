@@ -3,7 +3,6 @@ const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
 class User extends Model {
-    //set up method to run on instance data (per user) to check password 
     checkPassword(loginPw) {
         return bcrypt.compareSync(loginPw, this.password);
     }
@@ -11,7 +10,6 @@ class User extends Model {
 
 User.init(
     {
-        //table columns
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
