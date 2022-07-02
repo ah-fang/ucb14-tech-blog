@@ -14,9 +14,9 @@ async function signupFormHandler(event) {
             }),
             headers: { 'Content-Type': 'application/json' }
         });
-        //check response status
         if (response.ok) {
             console.log('Success');
+            alert("Signup successful! You may now log in with your email and password.")
         } else {
             alert(response.statusText);
         }
